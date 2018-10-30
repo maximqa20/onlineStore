@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import ProductService from '@/components/ProductService';
+import ProductService from '../components/ProductService';
 
 export default {
   name: 'ProductAdd',

@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import ProductItem from '@/components/ProductItem';
-import ProductService from '@/components/ProductService';
+import ProductItem from '../components/ProductItem';
+import ProductService from '../components/ProductService';
 
 export default {
   data() {

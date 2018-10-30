@@ -17,9 +17,9 @@
 </template>
 
 <script>
-import ProductList from '@/components/ProductList';
-import ProductDetails from '@/components/ProductDetails';
-import ProductAdd from '@/components/ProductAdd';
+import ProductList from './components/ProductList';
+import ProductDetails from './components/ProductDetails';
+import ProductAdd from './components/ProductAdd';
 
 export default {
   name: 'App',

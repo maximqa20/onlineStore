@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import ProductService from '@/components/ProductService';
+import ProductService from '../components/ProductService';
 
 export default {
   name: 'ProductDetails',
@@ -29,7 +29,7 @@ export default {
     };
   },
   created() {
-    ProductService.$on('viewDetails1', (selectedProduct) => {
+    ProductService.$on('viewDetails', (selectedProduct) => {
       this.product = selectedProduct;
     });
   },
