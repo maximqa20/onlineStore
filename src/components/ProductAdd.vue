@@ -31,6 +31,7 @@ export default {
   methods: {
     addProduct() {
       ProductService.addProduct(this.product.title, this.product.price, this.product.qt);
+      this.$router.push('/');
     },
   },
 };

@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import ProductService from '../components/ProductService';
+// import ProductService from '../components/ProductService';
 
 export default {
   name: 'ProductItem',
@@ -31,7 +31,9 @@ export default {
     viewDetailsClicked() {
       // this.$emit('viewDetails', this.product.id);
       // this.viewDetails(this.product.id);
-      ProductService.viewDetails(this.product.id);
+      // ProductService.viewDetails(this.product.id);
+      //this.$router.push('/detail/' + this.product.id);
+      this.$router.push({ name: 'ProductDetails', params: { id: this.product.id } });
     },
   },
 

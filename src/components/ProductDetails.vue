@@ -15,6 +15,7 @@
         <span>{{product.qt}}</span>
       </div>
     </form>
+    <router-link :to="{name: 'ProductList'}" class="btn btn-info">Назад</router-link>
   </div>
 </template>
 
@@ -32,6 +33,9 @@ export default {
     ProductService.$on('viewDetails', (selectedProduct) => {
       this.product = selectedProduct;
     });
+  },
+  mounted() {
+    ProductService.viewDetails(this.$route.params.id);
   },
 };
 </script>
